@@ -1,3 +1,3 @@
 export const environment = {
-    url_api: 'http://localhost:3000/api/v1/',   
+    url_api: 'https://turpial-api-rest-production.up.railway.app/api/v1/',   
 };
