@@ -34,6 +34,7 @@ export class HomeComponent implements OnInit {
   } 
 
   viewModalTask(e:boolean){
+    if(!e) this.task = undefined
     this.showFormTask = e;
   }
 

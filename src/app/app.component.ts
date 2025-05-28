@@ -11,4 +11,11 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'app-task';
+  constructor(){
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    if (prefersDarkScheme.matches) {
+      document.body.classList.add('dark-theme');
+    }
+  }
 }
